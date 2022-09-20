@@ -23,9 +23,9 @@ User.hasMany(Character, {
   onDelete: 'CASCADE'
 });
 
-// Resolution.belongsTo(Interaction, {
-//   foreignKey: 'resolution_id',
-// });
+Resolution.belongsTo(Interaction, {
+  foreignKey: 'resolution_id',
+});
 
 Interaction.hasMany(Resolution, {
   foreignKey: 'resolution_id',
