@@ -24,4 +24,4 @@ Resolution.init(
       }
 );
 
-module.exports = Resolution;
+// module.exports = Resolution;
