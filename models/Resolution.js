@@ -13,6 +13,7 @@ Resolution.init(
         },
         resolution: {
             type: DataTypes.STRING,
+            allowNull: false,
         }
     },
     {

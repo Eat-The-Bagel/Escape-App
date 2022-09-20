@@ -13,6 +13,7 @@ Item.init(
         },
         item: {
             type: DataTypes.STRING,
+            allowNull: false,
         }
     },
     {
