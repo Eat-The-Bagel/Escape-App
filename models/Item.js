@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Resolution extends Model {}
+class Item extends Model {}
 
-Resolution.init(
+Item.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -11,7 +11,7 @@ Resolution.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        resolution: {
+        item: {
             type: DataTypes.STRING,
         }
     },
@@ -20,8 +20,8 @@ Resolution.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: "resolution",
+        modelName: "item",
       }
 );
 
-module.exports = Resolution;
+module.exports = Item;
