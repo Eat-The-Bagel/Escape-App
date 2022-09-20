@@ -27,9 +27,9 @@ Resolution.belongsTo(Interaction, {
   foreignKey: 'resolution_id',
 });
 
-Interaction.hasMany(Resolution, {
-  foreignKey: 'resolution_id',
-});
+// Interaction.hasMany(Resolution, {
+//   foreignKey: 'resolution_id',
+// });
 
 Inventory.belongsTo(Character, {
   foreignKey: 'character_id',
